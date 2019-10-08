@@ -1,0 +1,57 @@
+USE elmenus_ordering;
+----------------------------
+DROP TABLE IF EXISTS DataAnalysis_Orders_Details;
+CREATE TABLE DataAnalysis_Orders_Details AS SELECT * FROM V_DataAnalysis_Orders_Details;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_PromoAnalysis_Daily;
+CREATE TABLE DataAnalysis_PromoAnalysis_Daily AS SELECT * FROM V_DataAnalysis_PromoAnalysis_Daily;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_dim_users;
+CREATE TABLE DataAnalysis_dim_users AS SELECT * FROM V_DataAnalysis_dim_users;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Restaurants_Cohorts;
+CREATE TABLE DataAnalysis_Restaurants_Cohorts AS SELECT * FROM V_DataAnalysis_Restaurants_Cohorts;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Calls;
+CREATE TABLE DataAnalysis_Calls AS SELECT * FROM V_DataAnalysis_Calls;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Calls_v2;
+CREATE TABLE DataAnalysis_Calls_v2 AS SELECT * FROM V_DataAnalysis_Calls_v2;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Monthly_Target_Active_Users;
+CREATE TABLE DataAnalysis_Monthly_Target_Active_Users AS SELECT * FROM V_DataAnalysis_Monthly_Target_Active_Users;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Restaurant_Monthly_Bounce;
+CREATE TABLE DataAnalysis_Restaurant_Monthly_Bounce AS SELECT * FROM V_DataAnalysis_Restaurant_Monthly_Bounce;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_CohortRevenue;
+CREATE TABLE DataAnalysis_CohortRevenue AS SELECT * FROM V_DataAnalysis_CohortRevenue;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Cohort_Revenue_Retention;
+CREATE TABLE DataAnalysis_Cohort_Revenue_Retention AS SELECT * FROM V_DataAnalysis_Cohort_Revenue_Retention;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_MonthlyCohortAnalysis;
+CREATE TABLE DataAnalysis_MonthlyCohortAnalysis AS SELECT * FROM V_DataAnalysis_MonthlyCohortAnalysis;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_RestaurantsMonthlyAnalysis;
+CREATE TABLE DataAnalysis_RestaurantsMonthlyAnalysis AS SELECT * FROM V_DataAnalysis_RestaurantsMonthlyAnalysis;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_TransactionsMonthlyAnalysis;
+CREATE TABLE DataAnalysis_TransactionsMonthlyAnalysis AS SELECT * FROM V_DataAnalysis_TransactionsMonthlyAnalysis;
+-------------------------------------------------------------------------
+DROP TABLE IF EXISTS DataAnalysis_ResturantsMonthlyValuePercentiles;
+CREATE TABLE DataAnalysis_ResturantsMonthlyValuePercentiles AS SELECT * FROM V_DataAnalysis_ResturantsMonthlyValuePercentiles;
+------------------------------
+DROP TABLE IF EXISTS DataAnalysis_ResturantsMonthlySummary;
+CREATE TABLE DataAnalysis_ResturantsMonthlySummary AS SELECT * FROM V_DataAnalysis_ResturantsMonthlySummary;
+---------------------------------
+DROP TABLE IF EXISTS DW_dim_Branch;
+CREATE TABLE DW_dim_Branch AS SELECT * FROM V_DW_dim_Branch;
+-----------------------------------
+DROP TABLE IF EXISTS DataAnalysis_Branches_Orders_Calls;
+CREATE TABLE DataAnalysis_Branches_Orders_Calls AS SELECT * FROM V_DataAnalysis_Branches_Orders_Calls;
+-----------------------------------
+DROP TABLE IF EXISTS DataAnalysis_RestaurantsCohortsAnalysis;
+CREATE TABLE DataAnalysis_RestaurantsCohortsAnalysis AS SELECT * FROM V_DataAnalysis_RestaurantsCohortsAnalysis;
+-----------------------------------
+
